@@ -11,21 +11,25 @@ protocol HomeSceneInteractorProtocol: AnyObject {
 }
 
 final class HomeSceneInteractor: HomeSceneInteractorProtocol {
-    private var catWorker: CatWorkerProtocol
-    private var dogWorker: DogWorkerProtocol
+    private let presenter: HomeScenePresenterProtocol
+    private let catWorker: CatWorkerProtocol
+    private let dogWorker: DogWorkerProtocol
 
-    init(catWorker: CatWorkerProtocol, dogWorker: DogWorkerProtocol) {
+    init(presenter: HomeScenePresenterProtocol, catWorker: CatWorkerProtocol, dogWorker: DogWorkerProtocol) {
+        self.presenter = presenter
         self.catWorker = catWorker
         self.dogWorker = dogWorker
     }
 
     func fetchRandomCat() {
-        // TODO
+        self.catWorker.fetchRandomCat { data in
+            self.presenter.buildCatImage(with: data)
+        }
     }
 
     func fetchRandomDog() {
-        // TODO
+        self.dogWorker.fetchRandomDog { data in
+            self.presenter.buildDogImage(with: data)
+        }
     }
-
-
 }

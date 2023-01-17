@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 protocol DogWorkerProtocol: AnyObject {
-    func fetchRandomDog(completion: @escaping (String) -> Void)
+    func fetchRandomDog(completion: @escaping (DogResponseModel) -> Void)
 }
 
 final class DogWorker: DogWorkerProtocol {
@@ -20,11 +20,11 @@ final class DogWorker: DogWorkerProtocol {
         self.dogService = dogService
     }
 
-    func fetchRandomDog(completion: @escaping (String) -> Void) {
+    func fetchRandomDog(completion: @escaping (DogResponseModel) -> Void) {
         self.dogService.fetchRandomDog()
             .sink(
                 receiveCompletion: { print($0) },
-                receiveValue: { completion($0.url ?? "") }
+                receiveValue: { completion($0) }
             )
             .store(in: &requests)
     }

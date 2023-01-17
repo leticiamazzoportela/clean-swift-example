@@ -7,9 +7,20 @@
 
 import SwiftUI
 
+protocol HomeSceneViewDisplayProtocol {
+    func updateImage(viewModel: HomeSceneViewModel)
+}
+
+protocol HomeSceneViewRequestProtocol {
+    func fetchRandomCatFromInteractor()
+    func fetchRandomDogFromInteractor()
+}
+
 struct HomeSceneView: View {
+    @ObservedObject var viewModel = HomeSceneViewModel()
     private let defaultSize = UIScreen.main.bounds.width * 0.7
-    private var interactor: HomeSceneInteractorProtocol?
+
+    var interactor: HomeSceneInteractorProtocol?
 
     var body: some View {
         ZStack {
@@ -17,24 +28,36 @@ struct HomeSceneView: View {
                 .ignoresSafeArea()
             VStack {
                 ZStack {
-                    Image("placeholder")
-                        .resizable()
-                        .frame(width: defaultSize, height: defaultSize)
-                        .clipShape(RoundedRectangle(cornerRadius: 24.0))
+                    AsyncImage(url: self.viewModel.imageURL) { image in
+                        self.makeImage(image: image)
+                    } placeholder: {
+                        self.makeImage(image: Image("placeholder"))
+                    }
+
                 }.padding(12)
 
-                ZStack {
-                    makeButton(with: "Ver Gato", and: Color.indigo.opacity(0.8)) {
-                        self.fetchRandomCat()
-                    }
-                }.padding(4)
-
-                makeButton(with: "Ver Cachorro", and: Color.indigo.opacity(0.5)) {
-                    self.fetchRandomDog()
-                }
+                self.makeButtonsStack()
             }
-
         }
+    }
+}
+
+extension HomeSceneView: HomeSceneViewRequestProtocol {
+    func fetchRandomCatFromInteractor() {
+        self.viewModel.handleLoading(status: true)
+        self.interactor?.fetchRandomCat()
+    }
+
+    func fetchRandomDogFromInteractor() {
+        self.viewModel.handleLoading(status: true)
+        self.interactor?.fetchRandomDog()
+    }
+}
+
+extension HomeSceneView: HomeSceneViewDisplayProtocol {
+    func updateImage(viewModel: HomeSceneViewModel) {
+        self.viewModel.handleLoading(status: false)
+        self.viewModel.imageURL = viewModel.imageURL
     }
 }
 
@@ -49,18 +72,30 @@ private extension HomeSceneView {
                 .fontWeight(.bold)
         }
         .padding()
-        .background(color)
+        .background(self.viewModel.isLoading ? color.opacity(0.7) : color)
         .cornerRadius(8)
         .frame(width: defaultSize)
-    }
-}
-
-private extension HomeSceneView {
-    func fetchRandomCat() {
-        self.interactor?.fetchRandomCat()
+        .disabled(self.viewModel.isLoading)
     }
 
-    func fetchRandomDog() {
-        self.interactor?.fetchRandomDog()
+    func makeImage(image: Image) -> some View {
+        image
+            .resizable()
+            .frame(width: defaultSize, height: defaultSize)
+            .clipShape(RoundedRectangle(cornerRadius: 24.0))
+    }
+
+    func makeButtonsStack() -> some View {
+        VStack {
+            ZStack {
+                makeButton(with: "Ver Gato", and: Color.indigo.opacity(0.8)) {
+                    self.fetchRandomCatFromInteractor()
+                }
+            }.padding(4)
+
+            makeButton(with: "Ver Cachorro", and: Color.indigo.opacity(0.5)) {
+                self.fetchRandomDogFromInteractor()
+            }
+        }
     }
 }

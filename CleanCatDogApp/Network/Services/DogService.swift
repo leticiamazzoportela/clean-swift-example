@@ -14,7 +14,7 @@ protocol DogRequestsProtocol: AnyObject {
 
 final class DogService: DogRequestsProtocol {
     func fetchRandomDog() -> AnyPublisher<DogResponseModel, Error> {
-        let url = URL(string: EndPoints.randomDog.rawValue)!
+        let url = URL(string: EndPoints.randomDogURL.rawValue)!
 
         return URLSession.shared
             .dataTaskPublisher(for: url)

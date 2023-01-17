@@ -14,7 +14,7 @@ protocol CatRequestsProtocol: AnyObject {
 
 final class CatService: CatRequestsProtocol {
     func fetchRandomCat() -> AnyPublisher<CatResponseModel, Error> {
-        let url = URL(string: EndPoints.randomCat.rawValue)!
+        let url = URL(string: EndPoints.randomCatURLWithQueryParam.rawValue)!
 
         return URLSession.shared
             .dataTaskPublisher(for: url)

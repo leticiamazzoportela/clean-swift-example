@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 protocol CatWorkerProtocol: AnyObject {
-    func fetchRandomCat(completion: @escaping (String) -> Void)
+    func fetchRandomCat(completion: @escaping (CatResponseModel) -> Void)
 }
 
 final class CatWorker: CatWorkerProtocol {
@@ -20,11 +20,11 @@ final class CatWorker: CatWorkerProtocol {
         self.catService = catService
     }
 
-    func fetchRandomCat(completion: @escaping (String) -> Void) {
+    func fetchRandomCat(completion: @escaping (CatResponseModel) -> Void) {
         self.catService.fetchRandomCat()
             .sink(
                 receiveCompletion: { print($0) },
-                receiveValue: { completion($0.url ?? "") }
+                receiveValue: { completion($0) }
             )
             .store(in: &requests)
     }

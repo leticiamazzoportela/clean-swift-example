@@ -6,6 +6,7 @@
 //
 
 enum EndPoints: String {
-    case randomCat = "https://cataas.com/cat?json=true"
-    case randomDog = "https://dog.ceo/api/breeds/image/randomFetch"
+    case catHost = "https://cataas.com"
+    case randomCatURLWithQueryParam = "https://cataas.com/cat?json=true"
+    case randomDogURL = "https://dog.ceo/api/breeds/image/random"
 }
