@@ -1,5 +1,5 @@
 //
-//  HomeSceneViewModel.swift
+//  HomeViewModel.swift
 //  CleanCatDogApp
 //
 //  Created by Leticia Mazzo Portela on 17/01/23.

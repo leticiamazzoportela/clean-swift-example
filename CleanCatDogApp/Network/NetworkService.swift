@@ -1,5 +1,5 @@
 //
-//  NetworkProvider.swift
+//  NetworkService.swift
 //  CleanCatDogApp
 //
 //  Created by Leticia Mazzo Portela on 19/01/23.

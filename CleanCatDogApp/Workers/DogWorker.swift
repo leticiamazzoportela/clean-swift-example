@@ -1,5 +1,5 @@
 //
-//  DogRequestWorker.swift
+//  DogWorker.swift
 //  CleanCatDogApp
 //
 //  Created by Leticia Mazzo Portela on 10/01/23.
