@@ -13,15 +13,15 @@ protocol DogWorkerProtocol: AnyObject {
 }
 
 final class DogWorker: DogWorkerProtocol {
-    let dogService: DogRequestsProtocol
+    let dogService: RequestsProtocol
     private var requests = [AnyCancellable]()
 
-    init(dogService: DogRequestsProtocol) {
+    init(dogService: RequestsProtocol) {
         self.dogService = dogService
     }
 
     func fetchRandomDog(completion: @escaping (DogResponseModel) -> Void) {
-        self.dogService.fetchRandomDog()
+        self.dogService.get(url: URL(string: EndPoints.randomDogURL.rawValue)!)
             .sink(
                 receiveCompletion: { print($0) },
                 receiveValue: { completion($0) }

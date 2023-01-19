@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class HomeSceneViewModel: ObservableObject {
+final class HomeViewModel: ObservableObject {
     @Published var imageURL: URL?
     @Published var isLoading: Bool = false
 

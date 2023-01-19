@@ -11,7 +11,7 @@ import SwiftUI
 struct CleanCatDogAppApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeSceneConfigurator().configureView()
+            ViewFactory(viewType: .home).createView()
         }
     }
 }

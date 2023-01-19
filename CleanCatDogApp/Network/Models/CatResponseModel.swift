@@ -7,8 +7,4 @@
 
 struct CatResponseModel: Decodable, Hashable {
     var url: String?
-
-    enum CodingKeys: String, CodingKey {
-        case url
-    }
 }

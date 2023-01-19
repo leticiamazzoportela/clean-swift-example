@@ -7,15 +7,15 @@
 
 import Foundation
 
-protocol HomeScenePresenterProtocol: AnyObject {
+protocol HomePresenterProtocol: AnyObject {
     func buildCatImage(with data: CatResponseModel)
     func buildDogImage(with data: DogResponseModel)
 }
 
-final class HomeScenePresenter: HomeScenePresenterProtocol {
-    private var view: HomeSceneViewDisplayProtocol?
+final class HomePresenter: HomePresenterProtocol {
+    private var view: HomeViewDisplayProtocol?
 
-    init(view: HomeSceneViewDisplayProtocol?) {
+    init(view: HomeViewDisplayProtocol?) {
         self.view = view
     }
 
@@ -31,7 +31,7 @@ final class HomeScenePresenter: HomeScenePresenterProtocol {
 
     private func buildImage(with imagePath: String) {
         let url = URL(string: imagePath)
-        let viewModel = HomeSceneViewModel()
+        let viewModel = HomeViewModel()
         viewModel.imageURL = url
 
         DispatchQueue.main.async {

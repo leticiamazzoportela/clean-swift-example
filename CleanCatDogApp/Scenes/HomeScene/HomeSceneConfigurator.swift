@@ -5,18 +5,37 @@
 //  Created by Leticia Mazzo Portela on 16/01/23.
 //
 
-protocol HomeSceneConfiguratorProtocol: AnyObject {
-    func configureView() -> HomeSceneView
+import SwiftUI
+
+protocol ViewFactoryProtocol: AnyObject {
+    associatedtype ViewType: View
+    func createView() -> ViewType
 }
 
-final class HomeSceneConfigurator: HomeSceneConfiguratorProtocol {
-    func configureView() -> HomeSceneView {
-        let catWorker = CatWorker(catService: CatService())
-        let dogWorker = DogWorker(dogService: DogService())
+enum ViewType {
+    case home
+}
 
-        var view = HomeSceneView()
-        let presenter = HomeScenePresenter(view: view)
-        let interactor = HomeSceneInteractor(presenter: presenter, catWorker: catWorker, dogWorker: dogWorker)
+final class ViewFactory: ViewFactoryProtocol {
+    private let viewType: ViewType
+
+    init(viewType: ViewType) {
+        self.viewType = viewType
+    }
+
+    func createView() -> some View {
+        switch self.viewType {
+        case .home: return self.buildHomeView()
+        }
+    }
+
+    private func buildHomeView() -> HomeView {
+        let catWorker = CatWorker(catService: NetworkService())
+        let dogWorker = DogWorker(dogService: NetworkService())
+
+        var view = HomeView()
+        let presenter = HomePresenter(view: view)
+        let interactor = HomeInteractor(presenter: presenter, catWorker: catWorker, dogWorker: dogWorker)
 
         view.interactor = interactor
 

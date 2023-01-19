@@ -5,17 +5,17 @@
 //  Created by Leticia Mazzo Portela on 10/01/23.
 //
 
-protocol HomeSceneInteractorProtocol: AnyObject {
+protocol HomeInteractorProtocol: AnyObject {
     func fetchRandomCat()
     func fetchRandomDog()
 }
 
-final class HomeSceneInteractor: HomeSceneInteractorProtocol {
-    private let presenter: HomeScenePresenterProtocol
+final class HomeInteractor: HomeInteractorProtocol {
+    private let presenter: HomePresenterProtocol
     private let catWorker: CatWorkerProtocol
     private let dogWorker: DogWorkerProtocol
 
-    init(presenter: HomeScenePresenterProtocol, catWorker: CatWorkerProtocol, dogWorker: DogWorkerProtocol) {
+    init(presenter: HomePresenterProtocol, catWorker: CatWorkerProtocol, dogWorker: DogWorkerProtocol) {
         self.presenter = presenter
         self.catWorker = catWorker
         self.dogWorker = dogWorker

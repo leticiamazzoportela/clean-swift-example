@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-protocol HomeSceneViewDisplayProtocol {
-    func updateImage(viewModel: HomeSceneViewModel)
+protocol HomeViewDisplayProtocol {
+    func updateImage(viewModel: HomeViewModel)
 }
 
-protocol HomeSceneViewRequestProtocol {
+protocol HomeViewRequestProtocol {
     func fetchRandomCatFromInteractor()
     func fetchRandomDogFromInteractor()
 }
 
-struct HomeSceneView: View {
-    @ObservedObject var viewModel = HomeSceneViewModel()
+struct HomeView: View {
+    @ObservedObject var viewModel = HomeViewModel()
     private let defaultSize = UIScreen.main.bounds.width * 0.7
 
-    var interactor: HomeSceneInteractorProtocol?
+    var interactor: HomeInteractorProtocol?
 
     var body: some View {
         ZStack {
@@ -42,7 +42,7 @@ struct HomeSceneView: View {
     }
 }
 
-extension HomeSceneView: HomeSceneViewRequestProtocol {
+extension HomeView: HomeViewRequestProtocol {
     func fetchRandomCatFromInteractor() {
         self.viewModel.handleLoading(status: true)
         self.interactor?.fetchRandomCat()
@@ -54,14 +54,14 @@ extension HomeSceneView: HomeSceneViewRequestProtocol {
     }
 }
 
-extension HomeSceneView: HomeSceneViewDisplayProtocol {
-    func updateImage(viewModel: HomeSceneViewModel) {
+extension HomeView: HomeViewDisplayProtocol {
+    func updateImage(viewModel: HomeViewModel) {
         self.viewModel.handleLoading(status: false)
         self.viewModel.imageURL = viewModel.imageURL
     }
 }
 
-private extension HomeSceneView {
+private extension HomeView {
     func makeButton(with title: String, and color: Color, action: @escaping () -> Void) -> some View {
         Button(action: {
             action()

@@ -13,15 +13,15 @@ protocol CatWorkerProtocol: AnyObject {
 }
 
 final class CatWorker: CatWorkerProtocol {
-    let catService: CatRequestsProtocol
+    let catService: RequestsProtocol
     private var requests = [AnyCancellable]()
 
-    init(catService: CatRequestsProtocol) {
+    init(catService: RequestsProtocol) {
         self.catService = catService
     }
 
     func fetchRandomCat(completion: @escaping (CatResponseModel) -> Void) {
-        self.catService.fetchRandomCat()
+        self.catService.get(url: URL(string: EndPoints.randomCatURLWithQueryParam.rawValue)!)
             .sink(
                 receiveCompletion: { print($0) },
                 receiveValue: { completion($0) }
