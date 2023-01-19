@@ -2,7 +2,7 @@
 
 ### Clean Swift (VIP)
 
-O diagrama abaixo mostra o funcionamento da arquitetura Clean Swift. Para mais detalhes, consulte o artigo que escrevi no medium explicando a arquitetura:
+O diagrama abaixo mostra o funcionamento da arquitetura Clean Swift. Para mais detalhes, consulte o artigo que escrevi no medium explicando a arquitetura: [Clean Swift: O que é e como aplicar](https://medium.com/@leticiamportela/clean-swift-o-que-é-e-como-aplicar-66dd68309716) 
 
 <img src="https://user-images.githubusercontent.com/22660165/211606810-e17966f5-2312-49c8-a38d-86019e75459b.png" alt="Ciclo VIP" width="600"/>
 
