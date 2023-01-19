@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE0C2EFD297964B40011EBA4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C2EFC297964B40011EBA4 /* NetworkService.swift */; };
+		DE351AA1297597620023707A /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE351AA0297597620023707A /* EndPoints.swift */; };
+		DE351AA429759BD80023707A /* CatResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE351AA329759BD80023707A /* CatResponseModel.swift */; };
+		DE351AA629759C690023707A /* DogResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE351AA529759C690023707A /* DogResponseModel.swift */; };
+		DE351AAF2975C4D40023707A /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE351AAE2975C4D40023707A /* ViewFactory.swift */; };
+		DE81813E2977098D00A77C6B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE81813D2977098D00A77C6B /* HomeViewModel.swift */; };
+		DEAB9A2A296DCBF0001C2401 /* CleanCatDogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A29296DCBF0001C2401 /* CleanCatDogApp.swift */; };
+		DEAB9A2C296DCBF0001C2401 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A2B296DCBF0001C2401 /* HomeView.swift */; };
+		DEAB9A2E296DCBF2001C2401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEAB9A2D296DCBF2001C2401 /* Assets.xcassets */; };
+		DEAB9A32296DCBF2001C2401 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEAB9A31296DCBF2001C2401 /* Preview Assets.xcassets */; };
+		DEAB9A3B296DCEE9001C2401 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A3A296DCEE9001C2401 /* HomeInteractor.swift */; };
+		DEAB9A3D296DCEF5001C2401 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A3C296DCEF5001C2401 /* HomePresenter.swift */; };
+		DEAB9A45296DCFB4001C2401 /* CatWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A44296DCFB4001C2401 /* CatWorker.swift */; };
+		DEAB9A47296DCFC4001C2401 /* DogWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A46296DCFC4001C2401 /* DogWorker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE0C2EFC297964B40011EBA4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		DE351AA0297597620023707A /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		DE351AA329759BD80023707A /* CatResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatResponseModel.swift; sourceTree = "<group>"; };
+		DE351AA529759C690023707A /* DogResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogResponseModel.swift; sourceTree = "<group>"; };
+		DE351AAE2975C4D40023707A /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		DE81813D2977098D00A77C6B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DEAB9A26296DCBF0001C2401 /* CleanCatDogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanCatDogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEAB9A29296DCBF0001C2401 /* CleanCatDogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCatDogApp.swift; sourceTree = "<group>"; };
+		DEAB9A2B296DCBF0001C2401 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DEAB9A2D296DCBF2001C2401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEAB9A2F296DCBF2001C2401 /* CleanCatDogApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleanCatDogApp.entitlements; sourceTree = "<group>"; };
+		DEAB9A31296DCBF2001C2401 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DEAB9A3A296DCEE9001C2401 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		DEAB9A3C296DCEF5001C2401 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		DEAB9A44296DCFB4001C2401 /* CatWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatWorker.swift; sourceTree = "<group>"; };
+		DEAB9A46296DCFC4001C2401 /* DogWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogWorker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEAB9A23296DCBF0001C2401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE351A9F297596130023707A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DE351AA0297597620023707A /* EndPoints.swift */,
+				DE0C2EFC297964B40011EBA4 /* NetworkService.swift */,
+				DE351AA229759BB20023707A /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DE351AA229759BB20023707A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE351AA329759BD80023707A /* CatResponseModel.swift */,
+				DE351AA529759C690023707A /* DogResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE9F02EF29797E2500A381A2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DE351AAE2975C4D40023707A /* ViewFactory.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DEAB9A1D296DCBF0001C2401 = {
+			isa = PBXGroup;
+			children = (
+				DEAB9A28296DCBF0001C2401 /* CleanCatDogApp */,
+				DEAB9A27296DCBF0001C2401 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEAB9A27296DCBF0001C2401 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB9A26296DCBF0001C2401 /* CleanCatDogApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEAB9A28296DCBF0001C2401 /* CleanCatDogApp */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB9A41296DCF39001C2401 /* Scenes */,
+				DE9F02EF29797E2500A381A2 /* Utilities */,
+				DEAB9A40296DCF2F001C2401 /* Workers */,
+				DE351A9F297596130023707A /* Network */,
+				DEAB9A39296DCE4D001C2401 /* App */,
+				DEAB9A2F296DCBF2001C2401 /* CleanCatDogApp.entitlements */,
+				DEAB9A2D296DCBF2001C2401 /* Assets.xcassets */,
+				DEAB9A30296DCBF2001C2401 /* Preview Content */,
+			);
+			path = CleanCatDogApp;
+			sourceTree = "<group>";
+		};
+		DEAB9A30296DCBF2001C2401 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB9A31296DCBF2001C2401 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DEAB9A38296DCE0E001C2401 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB9A2B296DCBF0001C2401 /* HomeView.swift */,
+				DEAB9A3A296DCEE9001C2401 /* HomeInteractor.swift */,
+				DEAB9A3C296DCEF5001C2401 /* HomePresenter.swift */,
+				DE81813D2977098D00A77C6B /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DEAB9A39296DCE4D001C2401 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB9A29296DCBF0001C2401 /* CleanCatDogApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DEAB9A40296DCF2F001C2401 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB9A44296DCFB4001C2401 /* CatWorker.swift */,
+				DEAB9A46296DCFC4001C2401 /* DogWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		DEAB9A41296DCF39001C2401 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB9A38296DCE0E001C2401 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEAB9A25296DCBF0001C2401 /* CleanCatDogApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEAB9A35296DCBF2001C2401 /* Build configuration list for PBXNativeTarget "CleanCatDogApp" */;
+			buildPhases = (
+				DEAB9A22296DCBF0001C2401 /* Sources */,
+				DEAB9A23296DCBF0001C2401 /* Frameworks */,
+				DEAB9A24296DCBF0001C2401 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CleanCatDogApp;
+			productName = CleanCatDogApp;
+			productReference = DEAB9A26296DCBF0001C2401 /* CleanCatDogApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEAB9A1E296DCBF0001C2401 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DEAB9A25296DCBF0001C2401 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = DEAB9A21296DCBF0001C2401 /* Build configuration list for PBXProject "CleanCatDogApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEAB9A1D296DCBF0001C2401;
+			productRefGroup = DEAB9A27296DCBF0001C2401 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEAB9A25296DCBF0001C2401 /* CleanCatDogApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEAB9A24296DCBF0001C2401 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEAB9A32296DCBF2001C2401 /* Preview Assets.xcassets in Resources */,
+				DEAB9A2E296DCBF2001C2401 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEAB9A22296DCBF0001C2401 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE81813E2977098D00A77C6B /* HomeViewModel.swift in Sources */,
+				DEAB9A2C296DCBF0001C2401 /* HomeView.swift in Sources */,
+				DEAB9A3B296DCEE9001C2401 /* HomeInteractor.swift in Sources */,
+				DEAB9A47296DCFC4001C2401 /* DogWorker.swift in Sources */,
+				DEAB9A3D296DCEF5001C2401 /* HomePresenter.swift in Sources */,
+				DE0C2EFD297964B40011EBA4 /* NetworkService.swift in Sources */,
+				DEAB9A2A296DCBF0001C2401 /* CleanCatDogApp.swift in Sources */,
+				DE351AA1297597620023707A /* EndPoints.swift in Sources */,
+				DE351AAF2975C4D40023707A /* ViewFactory.swift in Sources */,
+				DE351AA429759BD80023707A /* CatResponseModel.swift in Sources */,
+				DEAB9A45296DCFB4001C2401 /* CatWorker.swift in Sources */,
+				DE351AA629759C690023707A /* DogResponseModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DEAB9A33296DCBF2001C2401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEAB9A34296DCBF2001C2401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DEAB9A36296DCBF2001C2401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CleanCatDogApp/CleanCatDogApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CleanCatDogApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leticia.CleanCatDogApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEAB9A37296DCBF2001C2401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CleanCatDogApp/CleanCatDogApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CleanCatDogApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leticia.CleanCatDogApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEAB9A21296DCBF0001C2401 /* Build configuration list for PBXProject "CleanCatDogApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEAB9A33296DCBF2001C2401 /* Debug */,
+				DEAB9A34296DCBF2001C2401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEAB9A35296DCBF2001C2401 /* Build configuration list for PBXNativeTarget "CleanCatDogApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEAB9A36296DCBF2001C2401 /* Debug */,
+				DEAB9A37296DCBF2001C2401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEAB9A1E296DCBF0001C2401 /* Project object */;
+}

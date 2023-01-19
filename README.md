@@ -10,9 +10,7 @@ O diagrama abaixo mostra o funcionamento da arquitetura Clean Swift. Para mais d
 
 Para mostrar como é possível aplicar Clean Swift em um projeto que utiliza SwiftUI, criei um projeto de exemplo simples que possui apenas a seguinte função: mostrar fotos aleatórias de gatos e cachorros. A função do usuário é só clicar em um botão para escolher qual animal ele deseja ver a foto.
 
-O diagrama abaixo mostra como as classes ficaram distribuídas no projeto seguindo a arquitetura Clean Swift:
-
-// inserir imagem
+https://user-images.githubusercontent.com/22660165/212996322-b5689868-4641-4e56-becd-4c9e9b5ec081.mov
 
 ### APIs utilizadas
 - https://dog.ceo/dog-api/documentation/random
