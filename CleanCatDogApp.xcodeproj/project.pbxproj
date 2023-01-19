@@ -11,7 +11,7 @@
 		DE351AA1297597620023707A /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE351AA0297597620023707A /* EndPoints.swift */; };
 		DE351AA429759BD80023707A /* CatResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE351AA329759BD80023707A /* CatResponseModel.swift */; };
 		DE351AA629759C690023707A /* DogResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE351AA529759C690023707A /* DogResponseModel.swift */; };
-		DE351AAF2975C4D40023707A /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE351AAE2975C4D40023707A /* HomeConfigurator.swift */; };
+		DE351AAF2975C4D40023707A /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE351AAE2975C4D40023707A /* ViewFactory.swift */; };
 		DE81813E2977098D00A77C6B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE81813D2977098D00A77C6B /* HomeViewModel.swift */; };
 		DEAB9A2A296DCBF0001C2401 /* CleanCatDogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A29296DCBF0001C2401 /* CleanCatDogApp.swift */; };
 		DEAB9A2C296DCBF0001C2401 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A2B296DCBF0001C2401 /* HomeView.swift */; };
@@ -28,7 +28,7 @@
 		DE351AA0297597620023707A /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		DE351AA329759BD80023707A /* CatResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatResponseModel.swift; sourceTree = "<group>"; };
 		DE351AA529759C690023707A /* DogResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogResponseModel.swift; sourceTree = "<group>"; };
-		DE351AAE2975C4D40023707A /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		DE351AAE2975C4D40023707A /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		DE81813D2977098D00A77C6B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		DEAB9A26296DCBF0001C2401 /* CleanCatDogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanCatDogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAB9A29296DCBF0001C2401 /* CleanCatDogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCatDogApp.swift; sourceTree = "<group>"; };
@@ -72,6 +72,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		DE9F02EF29797E2500A381A2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DE351AAE2975C4D40023707A /* ViewFactory.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		DEAB9A1D296DCBF0001C2401 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				DEAB9A41296DCF39001C2401 /* Scenes */,
+				DE9F02EF29797E2500A381A2 /* Utilities */,
 				DEAB9A40296DCF2F001C2401 /* Workers */,
 				DE351A9F297596130023707A /* Network */,
 				DEAB9A39296DCE4D001C2401 /* App */,
@@ -117,7 +126,6 @@
 				DEAB9A3A296DCEE9001C2401 /* HomeInteractor.swift */,
 				DEAB9A3C296DCEF5001C2401 /* HomePresenter.swift */,
 				DE81813D2977098D00A77C6B /* HomeViewModel.swift */,
-				DE351AAE2975C4D40023707A /* HomeConfigurator.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -225,7 +233,7 @@
 				DE0C2EFD297964B40011EBA4 /* NetworkService.swift in Sources */,
 				DEAB9A2A296DCBF0001C2401 /* CleanCatDogApp.swift in Sources */,
 				DE351AA1297597620023707A /* EndPoints.swift in Sources */,
-				DE351AAF2975C4D40023707A /* HomeConfigurator.swift in Sources */,
+				DE351AAF2975C4D40023707A /* ViewFactory.swift in Sources */,
 				DE351AA429759BD80023707A /* CatResponseModel.swift in Sources */,
 				DEAB9A45296DCFB4001C2401 /* CatWorker.swift in Sources */,
 				DE351AA629759C690023707A /* DogResponseModel.swift in Sources */,
