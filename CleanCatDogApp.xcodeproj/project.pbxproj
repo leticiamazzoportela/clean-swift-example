@@ -11,14 +11,14 @@
 		DE351AA1297597620023707A /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE351AA0297597620023707A /* EndPoints.swift */; };
 		DE351AA429759BD80023707A /* CatResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE351AA329759BD80023707A /* CatResponseModel.swift */; };
 		DE351AA629759C690023707A /* DogResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE351AA529759C690023707A /* DogResponseModel.swift */; };
-		DE351AAF2975C4D40023707A /* HomeSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE351AAE2975C4D40023707A /* HomeSceneConfigurator.swift */; };
-		DE81813E2977098D00A77C6B /* HomeSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE81813D2977098D00A77C6B /* HomeSceneViewModel.swift */; };
+		DE351AAF2975C4D40023707A /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE351AAE2975C4D40023707A /* HomeConfigurator.swift */; };
+		DE81813E2977098D00A77C6B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE81813D2977098D00A77C6B /* HomeViewModel.swift */; };
 		DEAB9A2A296DCBF0001C2401 /* CleanCatDogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A29296DCBF0001C2401 /* CleanCatDogApp.swift */; };
-		DEAB9A2C296DCBF0001C2401 /* HomeSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A2B296DCBF0001C2401 /* HomeSceneView.swift */; };
+		DEAB9A2C296DCBF0001C2401 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A2B296DCBF0001C2401 /* HomeView.swift */; };
 		DEAB9A2E296DCBF2001C2401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEAB9A2D296DCBF2001C2401 /* Assets.xcassets */; };
 		DEAB9A32296DCBF2001C2401 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEAB9A31296DCBF2001C2401 /* Preview Assets.xcassets */; };
-		DEAB9A3B296DCEE9001C2401 /* HomeSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A3A296DCEE9001C2401 /* HomeSceneInteractor.swift */; };
-		DEAB9A3D296DCEF5001C2401 /* HomeScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A3C296DCEF5001C2401 /* HomeScenePresenter.swift */; };
+		DEAB9A3B296DCEE9001C2401 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A3A296DCEE9001C2401 /* HomeInteractor.swift */; };
+		DEAB9A3D296DCEF5001C2401 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A3C296DCEF5001C2401 /* HomePresenter.swift */; };
 		DEAB9A45296DCFB4001C2401 /* CatWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A44296DCFB4001C2401 /* CatWorker.swift */; };
 		DEAB9A47296DCFC4001C2401 /* DogWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB9A46296DCFC4001C2401 /* DogWorker.swift */; };
 /* End PBXBuildFile section */
@@ -28,16 +28,16 @@
 		DE351AA0297597620023707A /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		DE351AA329759BD80023707A /* CatResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatResponseModel.swift; sourceTree = "<group>"; };
 		DE351AA529759C690023707A /* DogResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogResponseModel.swift; sourceTree = "<group>"; };
-		DE351AAE2975C4D40023707A /* HomeSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneConfigurator.swift; sourceTree = "<group>"; };
-		DE81813D2977098D00A77C6B /* HomeSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneViewModel.swift; sourceTree = "<group>"; };
+		DE351AAE2975C4D40023707A /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		DE81813D2977098D00A77C6B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		DEAB9A26296DCBF0001C2401 /* CleanCatDogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanCatDogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAB9A29296DCBF0001C2401 /* CleanCatDogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCatDogApp.swift; sourceTree = "<group>"; };
-		DEAB9A2B296DCBF0001C2401 /* HomeSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneView.swift; sourceTree = "<group>"; };
+		DEAB9A2B296DCBF0001C2401 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DEAB9A2D296DCBF2001C2401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEAB9A2F296DCBF2001C2401 /* CleanCatDogApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleanCatDogApp.entitlements; sourceTree = "<group>"; };
 		DEAB9A31296DCBF2001C2401 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DEAB9A3A296DCEE9001C2401 /* HomeSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneInteractor.swift; sourceTree = "<group>"; };
-		DEAB9A3C296DCEF5001C2401 /* HomeScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScenePresenter.swift; sourceTree = "<group>"; };
+		DEAB9A3A296DCEE9001C2401 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		DEAB9A3C296DCEF5001C2401 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		DEAB9A44296DCFB4001C2401 /* CatWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatWorker.swift; sourceTree = "<group>"; };
 		DEAB9A46296DCFC4001C2401 /* DogWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,16 +110,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DEAB9A38296DCE0E001C2401 /* HomeScene */ = {
+		DEAB9A38296DCE0E001C2401 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DEAB9A2B296DCBF0001C2401 /* HomeSceneView.swift */,
-				DEAB9A3A296DCEE9001C2401 /* HomeSceneInteractor.swift */,
-				DEAB9A3C296DCEF5001C2401 /* HomeScenePresenter.swift */,
-				DE81813D2977098D00A77C6B /* HomeSceneViewModel.swift */,
-				DE351AAE2975C4D40023707A /* HomeSceneConfigurator.swift */,
+				DEAB9A2B296DCBF0001C2401 /* HomeView.swift */,
+				DEAB9A3A296DCEE9001C2401 /* HomeInteractor.swift */,
+				DEAB9A3C296DCEF5001C2401 /* HomePresenter.swift */,
+				DE81813D2977098D00A77C6B /* HomeViewModel.swift */,
+				DE351AAE2975C4D40023707A /* HomeConfigurator.swift */,
 			);
-			path = HomeScene;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		DEAB9A39296DCE4D001C2401 /* App */ = {
@@ -142,7 +142,7 @@
 		DEAB9A41296DCF39001C2401 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				DEAB9A38296DCE0E001C2401 /* HomeScene */,
+				DEAB9A38296DCE0E001C2401 /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -217,15 +217,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE81813E2977098D00A77C6B /* HomeSceneViewModel.swift in Sources */,
-				DEAB9A2C296DCBF0001C2401 /* HomeSceneView.swift in Sources */,
-				DEAB9A3B296DCEE9001C2401 /* HomeSceneInteractor.swift in Sources */,
+				DE81813E2977098D00A77C6B /* HomeViewModel.swift in Sources */,
+				DEAB9A2C296DCBF0001C2401 /* HomeView.swift in Sources */,
+				DEAB9A3B296DCEE9001C2401 /* HomeInteractor.swift in Sources */,
 				DEAB9A47296DCFC4001C2401 /* DogWorker.swift in Sources */,
-				DEAB9A3D296DCEF5001C2401 /* HomeScenePresenter.swift in Sources */,
+				DEAB9A3D296DCEF5001C2401 /* HomePresenter.swift in Sources */,
 				DE0C2EFD297964B40011EBA4 /* NetworkService.swift in Sources */,
 				DEAB9A2A296DCBF0001C2401 /* CleanCatDogApp.swift in Sources */,
 				DE351AA1297597620023707A /* EndPoints.swift in Sources */,
-				DE351AAF2975C4D40023707A /* HomeSceneConfigurator.swift in Sources */,
+				DE351AAF2975C4D40023707A /* HomeConfigurator.swift in Sources */,
 				DE351AA429759BD80023707A /* CatResponseModel.swift in Sources */,
 				DEAB9A45296DCFB4001C2401 /* CatWorker.swift in Sources */,
 				DE351AA629759C690023707A /* DogResponseModel.swift in Sources */,
