@@ -25,11 +25,11 @@ final class ViewFactory: ViewFactoryProtocol {
 
     func createView() -> some View {
         switch self.viewType {
-        case .home: return self.buildHomeView()
+        case .home: return self.createHomeView()
         }
     }
 
-    private func buildHomeView() -> HomeView {
+    private func createHomeView() -> HomeView {
         let catWorker = CatWorker(catService: NetworkService())
         let dogWorker = DogWorker(dogService: NetworkService())
 
